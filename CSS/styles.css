@@ -99,3 +99,11 @@ footer .icon {
   max-height: 200px;
   border-radius: 50%;
 }
+
+#about_me {
+  text-align: justify;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  line-height: 2em;
+}
