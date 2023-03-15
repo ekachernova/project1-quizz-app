@@ -89,9 +89,10 @@ footer .icon {
 /*profile styles*/
 .profile_container {
   display: flex;
-  width: 80%;
-  background-color: aqua;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
 }
 .profile_photo img {
   width: 200px;
