@@ -11,6 +11,7 @@ header {
   position: sticky;
   letter-spacing: 10px;
   top: 0;
+  z-index: 100;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .question_card {
@@ -38,6 +39,18 @@ main {
   border-radius: 15px;
   background-color: whitesmoke;
 }
+#bookmark_checkbox_container {
+  display: flex;
+  flex-direction: row;
+}
+#bookmark_checkbox {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 200px;
+  bottom: 35px;
+}
+
 button {
   padding: 35px;
   border-radius: 15px;
