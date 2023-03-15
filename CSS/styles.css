@@ -7,9 +7,14 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #d0e8f2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: relative;
+  letter-spacing: 10px;
 }
+
 h1 {
-  font-size: 60px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 main {
@@ -35,7 +40,7 @@ main {
 button {
   padding: 35px;
   border-radius: 15px;
-  background-color: brown;
+  background-color: fuchsia;
   font-size: 25px;
   color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -50,4 +55,6 @@ button {
   border-radius: 5px;
   color: whitesmoke;
   padding: 5px;
+  flex-wrap: wrap;
+  align-content: start;
 }
