@@ -85,3 +85,36 @@ footer .icon {
   width: 60px;
   height: 60px;
 }
+
+/*profile styles*/
+.profile_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+.profile_photo img {
+  width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+#about_me {
+  text-align: justify;
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  line-height: 2em;
+}
+#counter_container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.counter_item {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 8px;
+}
