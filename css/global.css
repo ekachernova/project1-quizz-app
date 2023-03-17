@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --primary-color: white;
+  --secondary-color: #d0e8f2;
+  --question-card-color: whitesmoke;
+  --buttons-color: fuchsia;
+  --font-color-buttons: whitesmoke;
+}
