@@ -1,12 +1,20 @@
 @import "./global.css";
 
+main {
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   width: auto;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d0e8f2;
+  background-color: var(--secondary-color);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   position: sticky;
   letter-spacing: 10px;
@@ -36,7 +44,7 @@ main {
   align-self: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 15px;
-  background-color: whitesmoke;
+  background-color: var(--question-card-color);
 }
 #bookmark_checkbox_container {
   display: flex;
@@ -53,9 +61,9 @@ main {
 button {
   padding: 35px;
   border-radius: 15px;
-  background-color: fuchsia;
+  background-color: var(--buttons-color);
   font-size: 25px;
-  color: whitesmoke;
+  color: var(--font-color-buttons);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .tags_container {
@@ -67,16 +75,17 @@ button {
 .tags_container a {
   background-color: lightslategrey;
   border-radius: 5px;
-  color: whitesmoke;
+  color: var(--font-color-buttons);
   padding: 5px;
   flex-wrap: wrap;
   align-content: start;
 }
 footer {
   height: 120px;
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  background-color: #d0e8f2;
+  width: 100%;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,37 +93,4 @@ footer {
 footer .icon {
   width: 60px;
   height: 60px;
-}
-
-/*profile styles*/
-.profile_container {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
-}
-.profile_photo img {
-  width: 200px;
-  max-height: 200px;
-  border-radius: 50%;
-}
-
-#about_me {
-  text-align: justify;
-  margin-top: 40px;
-  margin-left: 60px;
-  margin-right: 60px;
-  line-height: 2em;
-}
-#counter_container {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  margin-top: 40px;
-}
-.counter_item {
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 8px;
 }
