@@ -22,9 +22,9 @@ form.addEventListener("submit", (event) => {
 <h2>${formElements.your__question.value}</h2>
 <button data-js="card__button">Show Answer</button>
 <!--hidden answer-->
-<h2 data-js="card__answer" hidden>This is the answer!</h2>
+<h2 data-js="card__answer">${formElements.your__answer.value}</h2>
 <div class="card__tags__container">
-<a href="#">#html</a>
+<a href="#">${formElements.tag.value}</a>
 <a href="#">#flexbox</a>
 <a href="#">#css</a>
 </div>
