@@ -1,38 +1,6 @@
 @import "./global.css";
 
-main {
-  background-color: var(--primary-color);
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  width: auto;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  position: sticky;
-  letter-spacing: 10px;
-  top: 0;
-  z-index: 100;
-}
-
-h1 {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.question_card {
+.card {
   width: 80%;
   height: 400px;
   display: flex;
@@ -46,11 +14,11 @@ main {
   border-radius: 15px;
   background-color: var(--question-card-color);
 }
-#bookmark_checkbox_container {
+.card #card__bookmark {
   display: flex;
   flex-direction: row;
 }
-#bookmark_checkbox {
+.card #bookmark_checkbox {
   width: 40px;
   height: 40px;
   position: relative;
@@ -58,7 +26,7 @@ main {
   bottom: 35px;
 }
 
-button {
+.card button {
   padding: 35px;
   border-radius: 15px;
   background-color: var(--buttons-color);
@@ -66,31 +34,17 @@ button {
   color: var(--font-color-buttons);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.tags_container {
+.card .card__tags__container {
   display: flex;
   gap: 10px;
   padding-right: 250px;
 }
 
-.tags_container a {
+.card .card__tags__container a {
   background-color: lightslategrey;
   border-radius: 5px;
   color: var(--font-color-buttons);
   padding: 5px;
   flex-wrap: wrap;
   align-content: start;
-}
-footer {
-  height: 120px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: var(--secondary-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .icon {
-  width: 60px;
-  height: 60px;
 }
