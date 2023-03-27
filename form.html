@@ -26,20 +26,22 @@
         <label for="your__question">Your question</label>
         <textarea
           name="your__question"
-          id=""
-          cols="20"
-          rows="15"
-          style="font-size: 35px"
+          style="font-size: 25px"
+          maxlength="150"
         ></textarea>
+        <div id="left__caracters">
+          <span data-js="question__left__caracters">Left caracters:</span>
+        </div>
 
         <label for="your__question">Your answer</label>
         <textarea
           name="your__answer"
-          id=""
-          cols="20"
-          rows="15"
-          style="font-size: 35px"
+          style="font-size: 25px"
+          maxlength="150"
         ></textarea>
+        <div id="left__caracters">
+          <span data-js="answer__left__caracters">Left caracters:</span>
+        </div>
 
         <label for="tag">Tag:</label>
         <input
@@ -48,7 +50,7 @@
           name="tag"
           data-js="tag"
           class="tag"
-          style="font-size: 35px"
+          style="font-size: 25px"
         />
 
         <button

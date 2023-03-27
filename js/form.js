@@ -32,3 +32,5 @@ form.addEventListener("submit", (event) => {
 `;
   document.body.append(newCardData);
 });
+
+//coounting left caracters in the forms
