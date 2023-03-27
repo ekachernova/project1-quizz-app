@@ -11,3 +11,27 @@ bookmark.addEventListener("click", () => {
     bookmark.setAttribute("src", "./assets/bookmark_filled.png");
   }
 });
+
+//add functionality to the button
+
+const cardButton = document.querySelector('[data-js="card__button"]');
+const cardQuestion = document.querySelector('[data-js="card"]');
+const cardAnswer = document.querySelector('[data-js = "card__answer"]');
+cardButton.addEventListener("click", () => {
+  cardAnswer.toggleAttribute("hidden");
+  cardButton.textContent = "Hide answer!";
+  if (cardAnswer.hasAttribute("hidden")) {
+    cardButton.textContent = "Show answer";
+  } else {
+    cardButton.textContent = "Hide answer";
+  }
+});
+
+/**document.getElementById("okButton").addEventListener(
+  "click",
+  () => {
+    document.getElementById("welcome").hidden = true;
+    document.getElementById("awesome").hidden = false;
+  },
+  false
+); */

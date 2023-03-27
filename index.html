@@ -17,7 +17,7 @@
   <body>
     <header><h1 id="app_title">QUIZ APP</h1></header>
     <main>
-      <section class="card">
+      <section class="card" data-js="card">
         <div id="card__bookmark">
           <img
             src="./assets/bookmark_transparent.png"
@@ -27,7 +27,12 @@
           />
         </div>
         <h2>What proprety flips the axes in flexbox?</h2>
-        <button>Show Answer</button>
+
+        <button data-js="card__button">Show Answer</button>
+
+        <!--hidden answer-->
+        <h2 data-js="card__answer" hidden>This is the answer!</h2>
+
         <section class="card__tags__container">
           <a href="#">#html</a>
           <a href="#">#flexbox</a>
@@ -40,11 +45,12 @@
             src="./assets/bookmark_transparent.png"
             alt="non-active-bookmark"
             id="bookmark_checkbox"
+            data-js="bookmark_checkbox"
           />
         </div>
 
         <h2>Lorem Ipsum dolor sit?</h2>
-        <button>Show Answer</button>
+        <button data-js="card__button">Show Answer</button>
         <div class="card__tags__container">
           <a href="#" id="tag">#html</a>
           <a href="#" id="tag">#flexbox</a>
@@ -58,11 +64,11 @@
             src="./assets/bookmark_transparent.png"
             alt="non-active-bookmark"
             id="bookmark_checkbox"
-          />
+            data-js="bookmark_checkbox"
           />
         </div>
         <h2>What proprety flips the axes in flexbox?</h2>
-        <button>Show Answer</button>
+        <button data-js="card__button">Show Answer</button>
         <div class="card__tags__container">
           <a href="#">#html</a>
           <a href="#">#flexbox</a>
@@ -76,10 +82,11 @@
             src="./assets/bookmark_transparent.png"
             alt="non-active-bookmark"
             id="bookmark_checkbox"
+            data-js="bookmark_checkbox"
           />
         </div>
         <h2>What proprety flips the axes in flexbox?</h2>
-        <button>Show Answer</button>
+        <button data-js="card__button">Show Answer</button>
         <div class="card__tags__container">
           <a href="#">#html</a>
           <a href="#">#flexbox</a>
