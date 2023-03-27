@@ -14,11 +14,11 @@
   border-radius: 15px;
   background-color: var(--question-card-color);
 }
-#card__bookmark {
+.card #card__bookmark {
   display: flex;
   flex-direction: row;
 }
-#bookmark_checkbox {
+.card #bookmark_checkbox {
   width: 40px;
   height: 40px;
   position: relative;
@@ -26,7 +26,7 @@
   bottom: 35px;
 }
 
-button {
+.card button {
   padding: 35px;
   border-radius: 15px;
   background-color: var(--buttons-color);
@@ -34,13 +34,13 @@ button {
   color: var(--font-color-buttons);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.card__tags__container {
+.card .card__tags__container {
   display: flex;
   gap: 10px;
   padding-right: 250px;
 }
 
-.card__tags__container a {
+.card .card__tags__container a {
   background-color: lightslategrey;
   border-radius: 5px;
   color: var(--font-color-buttons);

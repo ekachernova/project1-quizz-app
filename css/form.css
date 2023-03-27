@@ -1,4 +1,5 @@
 @import "./global.css";
+@import "./card.css";
 
 main {
   margin-left: 60px;
@@ -33,4 +34,9 @@ textarea {
   border-radius: 12px;
   background-color: var(--buttons-color);
   color: var(--font-color-buttons);
+}
+
+.card {
+  margin-left: 60px;
+  margin-right: 60px;
 }
