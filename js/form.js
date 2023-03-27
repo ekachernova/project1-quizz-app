@@ -33,4 +33,18 @@ form.addEventListener("submit", (event) => {
   document.body.append(newCardData);
 });
 
-//coounting left caracters in the forms
+//coounting left caracters in the question form
+
+const questionTextarea = document.querySelector('[data-js = "question__text"]');
+const caractersCounter = document.querySelector(
+  '[data-js ="question__left__caracters"]'
+);
+const maxLength = questionTextarea.maxLength;
+
+questionTextarea.addEventListener("input", () => {
+  const typedCharacters = questionTextarea.value.length;
+  const leftCharacters = maxLength - typedCharacters;
+  caractersCounter.textContent = `Left characters: ${leftCharacters}`;
+
+  console.log(typedCharacters);
+});
