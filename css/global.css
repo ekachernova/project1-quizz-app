@@ -13,3 +13,45 @@
   --buttons-color: fuchsia;
   --font-color-buttons: whitesmoke;
 }
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: sticky;
+  letter-spacing: 10px;
+  top: 0;
+  z-index: 100;
+}
+
+footer {
+  height: 120px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .icon {
+  width: 60px;
+  height: 60px;
+}
