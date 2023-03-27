@@ -1,0 +1,36 @@
+@import "./global.css";
+
+main {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 35px;
+  margin-top: 60px;
+}
+
+textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+}
+
+.tag {
+  margin-top: 20px;
+  height: 60px;
+}
+
+.button__form__submit {
+  margin-top: 20px;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 12px;
+  background-color: var(--buttons-color);
+  color: var(--font-color-buttons);
+}
