@@ -33,10 +33,10 @@ form.addEventListener("submit", (event) => {
   document.body.append(newCardData);
 });
 
-//coounting left caracters in the question form
+//counting left caracters in the question form
 
 const questionTextarea = document.querySelector('[data-js = "question__text"]');
-const caractersCounter = document.querySelector(
+const charactersCounter = document.querySelector(
   '[data-js ="question__left__caracters"]'
 );
 const maxLength = questionTextarea.maxLength;
@@ -44,7 +44,26 @@ const maxLength = questionTextarea.maxLength;
 questionTextarea.addEventListener("input", () => {
   const typedCharacters = questionTextarea.value.length;
   const leftCharacters = maxLength - typedCharacters;
-  caractersCounter.textContent = `Left characters: ${leftCharacters}`;
+  charactersCounter.textContent =
+    typedCharacters === 0 ? "" : `Left characters: ${leftCharacters}`;
 
   console.log(typedCharacters);
+});
+
+//counting left caracters in the answer form
+
+const answerTextarea = document.querySelector('[data-js="answer__text"]');
+const answerCharactersCounter = document.querySelector(
+  '[data-js ="answer__left__caracters"]'
+);
+const answerMaxLength = answerTextarea.maxLength;
+
+answerTextarea.addEventListener("input", () => {
+  const typedCharactersAnswer = answerTextarea.value.length;
+  const leftCharactersAnswer = answerMaxLength - typedCharactersAnswer;
+  answerCharactersCounter.textContent =
+    typedCharactersAnswer === 0
+      ? ""
+      : `Left characters: ${leftCharactersAnswer}`;
+  console.log(typedCharactersAnswer);
 });
